@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.whiteheket.youthief.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"PlaceChestMixin",
+		"BreakChestMixin",
+		"PlaceAndUseBarrel"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "youthief",
+	"version": "${version}",
+	"name": "YouThief",
+	"description": "Villagers get angry if you open chests in their villages!",
+	"authors": [
+		"Eugene2000","White_Heket"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/you-thief-remastered-edition",
+		"sources": "https://github.com/whiteheket/youthief"
+	},
+	"license": "CC BY-NC-SA 4.0”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+	"icon": "assets/youthief/icon.png",
+	"environment": "*",
+	"entrypoint": {
+		"main": [
+			"net.whiteheket.youthief.YouThief"
+		],
+		"client": [
+			"net.whiteheket.youthief.YouThiefClient"
+		],
+		"fabric-datagen": [
+			"net.whiteheket.youthief.YouThiefDataGenerator"
+		]
+	},
+	"mixins": [
+		"youthief.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
